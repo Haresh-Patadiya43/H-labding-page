@@ -546,3 +546,133 @@ img {
 
 
 
+/*responsive code*/
+
+/* ===== GLOBAL RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 992px) {
+  /* Hero Section */
+  .main-section {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .left-section, .right-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+
+  .section-p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  /* About Section */
+  .about-section .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== TABLET AND MOBILE ===== */
+@media (max-width: 768px) {
+  /* Navbar */
+  nav ul, nav button {
+    display: none;
+  }
+
+  /* Hero Section */
+  h1 {
+    font-size: 36px;
+  }
+
+  .section-p {
+    font-size: 16px;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  /* Contact Section */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-form input, 
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-links a {
+    margin: 0 6px;
+  }
+}
+
+/* ===== MOBILE SPECIFIC ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .section-p {
+    font-size: 14px;
+  }
+
+  .section-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .projects-section {
+    padding: 40px 20px;
+  }
+
+  .about-section, .contact-section {
+    padding: 40px 20px;
+  }
+}
+
+
+
