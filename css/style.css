@@ -121,6 +121,9 @@ p {
 .section-btn:hover{
     background: #5b5050;
 }
+.section-btn a{
+  text-decoration: none;
+}
 
 /* Image */
 img {
